@@ -1,4 +1,4 @@
-class User
+class User1
   attr_accessor :name, :email
 
   def initialize(attributes = {})
