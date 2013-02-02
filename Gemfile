@@ -17,7 +17,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'annotate', '2.5.0'
+  gem 'annotate', '2.5.0' #Gem to annotate the code $  bundle exec annotate
 end
 
 # Gems used only for assets and not required
