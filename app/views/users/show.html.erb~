@@ -1,12 +1,14 @@
-#In order to get the user show view to work, we need to define an @user variable in the corresponding show action in the Users controller in app/controllers/users_controller.rb
-
+<!---In order to get the user show view to work, we need to define an @user variable in the corresponding show action in the Users controller in app/controllers/users_controller.rb
+--->
 <% provide(:title, @user.name) %>
 <div class="row">
   <aside class="span4">
     <section>
       <h1>
         <%= gravatar_for @user %>
-        <%= @user.name %>
+        <%= @user.name %> <br>
+        <%= @user.email %><br>
+        SIN: <%= session['user'] %>				
       </h1>
     </section>
   </aside>

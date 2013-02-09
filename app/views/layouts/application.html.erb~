@@ -15,9 +15,12 @@
       <% end %>
       <%= yield %>
       <%= render 'layouts/footer' %>
-      <%= debug(params) if Rails.env.development? %>
-    </div>
-      <%= debug(params) if Rails.env.development? %> <!--Display Debug output in Dev env.-->
+<!--Display Debug output in Dev env.-->
+      <%= debug(params) if Rails.env.development? %> 
+      <%= debug(session) if Rails.env.development? %>
+      <%= debug(current_user) if Rails.env.development? %> 
+      <%= debug(User) if Rails.env.development? %>
+
     </div>
   </body>
 </html>
