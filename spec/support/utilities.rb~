@@ -7,6 +7,7 @@
 #  end
 #end
 
+#below include replaces the above code
 include ApplicationHelper
 
 
