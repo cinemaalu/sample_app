@@ -23,9 +23,9 @@
         <div class="alert"><%= 'Session:' %></div>
       <%= debug(session) if Rails.env.development? %>
         <div class="alert"><%= 'remember_token:' %></div>
-      <%= debug(User.find_by_remember_token(cookies[:remember_token])) if Rails.env.development? %> 
-        <div class="alert"><%= '@current_user:' %></div>
-      <%= debug(@current_user) if Rails.env.development? %>
+      <%= cookies if Rails.env.development? %> 
+        <div class="alert"><%= 'current_user:' %></div>
+      <%= debug(current_user['name']) if  Rails.env.development? && defined?current_user['name']  %>
 
     </div>
   </body>

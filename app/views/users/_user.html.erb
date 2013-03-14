@@ -1,6 +1,6 @@
 
 <li>
-  <%= gravatar_for user, size: 52 %>
+  <%= gravatar_for user, size: 32 %>
   <%= link_to user.name, user %>
 
   <% if current_user.admin? && !current_user?(user) %>
@@ -8,4 +8,6 @@
                                   data: { confirm: "You sure?" } %>
   <% end %>
 </li>
+
+
 

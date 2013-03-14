@@ -7,8 +7,7 @@
       <h1>
         <%= gravatar_for @user %>
         <%= @user.name %> <br>
-        <%= @user.email %><br>
-        SIN: <%= session['user'] %>				
+        <%= @user.email %>
       </h1>
     </section>
   </aside>
